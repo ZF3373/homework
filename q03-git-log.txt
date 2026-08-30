@@ -1,0 +1,6 @@
+*   2de78ba (HEAD -> main) Resolve merge conflict: keep mode=safe with note=reviewed
+|\  
+| * 424d7ac (feature-b) Change to mode=fast
+* | e21ab54 (feature-a) Change to mode=safe
+|/  
+* a0fdc5d Initial commit: mode=normal
