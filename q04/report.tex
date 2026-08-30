@@ -1,0 +1,38 @@
+% 第一周 q04：修复并构建一页技术说明
+% 构建：latexmk -xelatex -halt-on-error report.tex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage[UTF8]{ctex} % 中文支持，需 XeLaTeX 引擎
+\begin{document}
+\title{Tool Report}
+\author{周峰—25020007186}
+\maketitle
+
+\section{Result}
+本文实验采用均方误差（MSE）作为核心评估指标，定义如式\eqref{eq:mse}所示。参与对比的两款工具性能测试结果如表\ref{tab:latency}所示，其中Tool-B的延迟表现更优。
+
+% 带编号的公式，含 label
+\begin{equation}
+\label{eq:mse}
+MSE = \frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\end{equation}
+其中$n$为样本总数，$y_i$为真实观测值，$\hat{y}_i$为模型预测值。
+
+% 2行2列的表格，含 caption 和 label
+\begin{table}[htbp]
+\centering
+\caption{两种工具的延迟对比}
+\label{tab:latency}
+\begin{tabular}{|c|c|}
+\hline
+工具名 & 平均延迟(ms) \\
+\hline
+Tool-A & 120 \\
+\hline
+Tool-B & 85 \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
