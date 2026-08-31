@@ -1,3 +1,3 @@
-from math_utils import total_price
+from math_utils import calculate_total
 
-print(total_price(12.5, 4))
+print(calculate_total(12.5, 4))
