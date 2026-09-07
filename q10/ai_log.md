@@ -1,0 +1,3 @@
+- 提示：修改cli.py使--name仅含空白时以SystemExit(2)退出，不新增依赖，不改正常流程，测试命令pytest tests/test_cli.py -v
+- 智能体改动：添加_non_blank_name函数作为argparse type校验钩子，空白时抛ArgumentTypeError触发argparse自动以退出码2结束
+- 人工验证：git diff确认仅cli.py被修改，pytest全部通过，正常name仍输出Hello
