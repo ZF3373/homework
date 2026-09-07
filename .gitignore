@@ -1,4 +1,4 @@
-# LaTeX 构建中间产物
+# LaTeX 构建产物
 *.aux
 *.log
 *.out
@@ -6,3 +6,26 @@
 *.fdb_latexmk
 *.xdv
 *.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# Python 构建产物
+*.egg-info/
+build/
+dist/
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+clean_env/
+venv/
+.venv/
+env/
+
+# 工具/编辑器
+.workbuddy/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
